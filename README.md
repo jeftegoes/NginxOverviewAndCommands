@@ -1,16 +1,12 @@
-## What is this project
+# 1. Commands
 
-This is a sample project showing Serilog configured in the default .NET 6 web application and console template.
-
-## Project type console
-
-.NET 6.0
-
-## Result console
-
-![Console](/Images/ResultConsole.png)
-
-
-## Result web application
-
-![Seq](/Images/ResultSeq.png)
+- Start webserver
+  - `start nginx`
+- Fast shutdown
+  - `nginx -s stop`
+- graceful shutdown
+  - `nginx -s quit`
+- Changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes
+  - `nginx -s reload`
+- re-opening log files
+  - `nginx -s reopen`
